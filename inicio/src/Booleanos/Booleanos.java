@@ -16,6 +16,5 @@ public class Booleanos {
       out.println("El valor de el numero1 es mayor que el numero2");
     } else
       out.println("El numero2 es mayor que el numero1");
-
   }
 }
