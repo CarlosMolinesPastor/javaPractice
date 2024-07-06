@@ -55,11 +55,23 @@ public class Arrayse {
     System.out.println("");
     System.out.println("Buscamos un número en el array, introduce un numero");
     Integer numeroArray = Integer.parseInt(System.console().readLine());
-    if (Arrays.asList(arrayCadenas2).indexOf(numeroArray) != -1) {
+    int contador = 0;
+    for (int x = 0; x < arrayCadenas2.length; x++) {
+      if (arrayCadenas2[x] == numeroArray) {
+        contador++;
+      }
+    }
+    if (contador > 0) {
       System.out.println("El número " + numeroArray + " está en el array");
     } else {
       System.out.println("El número " + numeroArray + " no está en el array");
     }
+    // Otra forma de buscar un número en un array
+    // if (Arrays.asList(arrayCadenas2).indexOf(numeroArray) != -1) {
+    // System.out.println("El número " + numeroArray + " está en el array");
+    // } else {
+    // System.out.println("El número " + numeroArray + " no está en el array");
+    // }
     System.out.println("Pulsa enter para salir");
     System.console().readLine();
   }
