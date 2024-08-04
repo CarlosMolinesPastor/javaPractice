@@ -15,36 +15,36 @@ public class Arrayse {
     System.out.println(arrayCadenas[4]);
     System.out.println(arrayCadenas[5]);
     System.out.println(arrayCadenas[6]);
-    System.out.println("");
+    System.out.println();
     System.out.println("Recorriendo el array con un bucle for");
     for (int i = 0; i < arrayCadenas.length; i++) {
       System.out.println("Posición: " + i + " Valor: " + arrayCadenas[i]);
     }
-    System.out.println("");
+    System.out.println();
     System.out.println("Recorriendo el array con un bucle for each");
     for (String cadena : arrayCadenas) {
       System.out.println("Valor: " + cadena);
     }
-    System.out.println("");
+    System.out.println();
     System.out.println("Recorriendo el array con un bucle while");
     int i = 0;
     while (i < arrayCadenas.length) {
       System.out.println("Posición: " + i + " Valor: " + arrayCadenas[i]);
       i++;
     }
-    System.out.println("");
+    System.out.println();
     System.out.println("Recorriendo el array con un bucle do while");
     i = 0;
     do {
       System.out.println("Posición: " + i + " Valor: " + arrayCadenas[i]);
       i++;
     } while (i < arrayCadenas.length);
-    System.out.println("");
+    System.out.println();
     String cadena = "2,9,5,7,1,34,12,0";
     Integer[] arrayCadenas2 = { 2, 9, 5, 7, 1, 34, 12, 0 };
     // Realizamos operaciones con el array
     System.out.println("Mostramos arrayCadenas2: " + cadena);
-    System.out.println("");
+    System.out.println();
     Arrays.sort(arrayCadenas2);
     String numeros = "";
     for (int j = 0; j < arrayCadenas2.length; j++) {
@@ -52,7 +52,7 @@ public class Arrayse {
       numeros = numeros + arrayCadenas2[j].toString() + ",";
     }
     System.out.println("Array ordenado: " + numeros);
-    System.out.println("");
+    System.out.println();
     System.out.println("Buscamos un número en el array, introduce un numero");
     Integer numeroArray = Integer.parseInt(System.console().readLine());
     int contador = 0;
