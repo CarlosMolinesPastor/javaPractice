@@ -16,7 +16,7 @@ public class Diccionarios {
        System.out.println(" # clear: elimina todos los elementos del diccionario");
        System.out.println();
        HashMap<String,String> diasIngles = new HashMap<String, String>();
-       System.out.println(" Creamos diccionario diasIngles y insertamos los dias de la semana\n diasIngles.put('diasCastellano', 'diasenIngles')");
+       System.out.println(" Creamos diccionario diasIngles y insertamos los dias de la semana\n HashMap<String,String> diasIngles = new HashMap<String, String>();\n  diasIngles.put('diasCastellano', 'diasenIngles')");
        diasIngles.put("Lunes", "Monday");
        diasIngles.put("Martes", "Tuesday");
        diasIngles.put("Miercoles", "Wednesday");
@@ -27,7 +27,7 @@ public class Diccionarios {
        System.out.println(" Tamaño del diccionario: " + diasIngles.size() );
        System.out.println(" Esta el viernes??: containsKey('Viernes') -->" + diasIngles.containsKey("Viernes"));
        System.out.println(" Esta el Sunday??: containsVelue('Sunday') -->" + diasIngles.containsValue("Sunday"));
-       System.out.println("Eliminamos el domingo y preguntamos si esiste el valor del Sunday");
+       System.out.println("Eliminamos el domingo y preguntamos si esiste el valor del Sunday \n diasIngles.remove(´Domingo´);");
        diasIngles.remove("Domingo");
        System.out.println(" Esta el Sunday: -->" + diasIngles.containsValue("Sunday"));
        System.out.println();
